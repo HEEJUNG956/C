@@ -1,11 +1,12 @@
 ﻿#include <iostream>
 #define max_int 1000001
 #define lld long long
-
 using namespace std;
+
+// 미해결
+
 int n, a[max_int], b, c;
 lld result;
-
 int main()
 {
 	scanf("%d", &n); // 시험장의 개수

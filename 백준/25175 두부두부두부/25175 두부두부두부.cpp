@@ -1,5 +1,7 @@
 ﻿#include <iostream>
 
+// 미해결
+
 int main()
 {
     int n; // 게임 참여자 수

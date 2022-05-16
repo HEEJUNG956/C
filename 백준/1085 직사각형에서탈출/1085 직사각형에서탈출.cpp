@@ -1,8 +1,10 @@
 ﻿#include <iostream>
 #include <algorithm>
 #include <vector>
-
 using namespace std;
+
+// 미해결
+
 int x, y, w, h;
 int main()
 {

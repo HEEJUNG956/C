@@ -3,6 +3,8 @@
 #include <algorithm>
 using namespace std;
 
+// 미해결
+
 int main()
 {
     string temp;

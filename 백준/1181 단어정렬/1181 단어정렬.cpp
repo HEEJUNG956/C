@@ -4,6 +4,8 @@
 #include <vector>
 using namespace std;
 
+// 미해결
+
 bool compare(string a, string b)
 {
 	if (a.length() == b.length())

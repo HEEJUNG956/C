@@ -3,6 +3,9 @@
 #include <vector>
 #include <cmath>
 using namespace std;
+
+// 미해결
+
 vector<int> arr;
 int main() {
     int num, tmp, range, middle = 0, most_val, mean = 0;

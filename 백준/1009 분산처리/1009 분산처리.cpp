@@ -2,6 +2,8 @@
 #include <math.h>
 using namespace std;
 
+// 미해결
+
 int n;
 int a, b;
 int result = 0;

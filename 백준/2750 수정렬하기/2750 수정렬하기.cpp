@@ -1,6 +1,9 @@
 ﻿#include <iostream>
 #include <vector>
 #include <algorithm>
+
+// 미해결
+
 using namespace std;
 int main()
 {

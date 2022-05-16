@@ -1,5 +1,7 @@
 ﻿#include <iostream>
 
+// 미해결
+
 int getNum(int a, int b)
 {
 	if (b == 1)

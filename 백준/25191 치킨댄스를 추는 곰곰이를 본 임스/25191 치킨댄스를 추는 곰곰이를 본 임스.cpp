@@ -1,5 +1,8 @@
 ﻿#include <iostream>
-
+/*
+    2022 - 05 - 16
+    정희석
+*/
 int main()
 {
     int n; // 치킨의 개수

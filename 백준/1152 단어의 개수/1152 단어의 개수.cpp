@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <string>
 using namespace std;
+
+// 미해결
+
 int main()
 {
     string str;
