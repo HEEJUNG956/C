@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "25191 치킨댄스를 추�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "25175 두부두부두부", "25175 두부두부두부\25175 두부두부두부.vcxproj", "{341942CE-6BF8-482E-8A59-1C641CADEF23}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2775 부녀회장이 될테야", "2775 부녀회장이 될테야\2775 부녀회장이 될테야.vcxproj", "{7E95756C-4D8B-47E5-AF99-9E30C713A4CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{341942CE-6BF8-482E-8A59-1C641CADEF23}.Release|x64.Build.0 = Release|x64
 		{341942CE-6BF8-482E-8A59-1C641CADEF23}.Release|x86.ActiveCfg = Release|Win32
 		{341942CE-6BF8-482E-8A59-1C641CADEF23}.Release|x86.Build.0 = Release|Win32
+		{7E95756C-4D8B-47E5-AF99-9E30C713A4CA}.Debug|x64.ActiveCfg = Debug|x64
+		{7E95756C-4D8B-47E5-AF99-9E30C713A4CA}.Debug|x64.Build.0 = Debug|x64
+		{7E95756C-4D8B-47E5-AF99-9E30C713A4CA}.Debug|x86.ActiveCfg = Debug|Win32
+		{7E95756C-4D8B-47E5-AF99-9E30C713A4CA}.Debug|x86.Build.0 = Debug|Win32
+		{7E95756C-4D8B-47E5-AF99-9E30C713A4CA}.Release|x64.ActiveCfg = Release|x64
+		{7E95756C-4D8B-47E5-AF99-9E30C713A4CA}.Release|x64.Build.0 = Release|x64
+		{7E95756C-4D8B-47E5-AF99-9E30C713A4CA}.Release|x86.ActiveCfg = Release|Win32
+		{7E95756C-4D8B-47E5-AF99-9E30C713A4CA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
