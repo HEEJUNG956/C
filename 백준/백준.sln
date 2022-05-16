@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4344 평균은넘겠지", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10809 알파벳찾기", "10809 알파벳찾기\10809 알파벳찾기.vcxproj", "{8CA63B79-0F98-4458-9732-0804732B8CC0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1152 단어의 개수", "1152 단어의 개수\1152 단어의 개수.vcxproj", "{07B216BF-4AEA-4A4F-A0F1-DC58F58AD98F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -191,6 +193,14 @@ Global
 		{8CA63B79-0F98-4458-9732-0804732B8CC0}.Release|x64.Build.0 = Release|x64
 		{8CA63B79-0F98-4458-9732-0804732B8CC0}.Release|x86.ActiveCfg = Release|Win32
 		{8CA63B79-0F98-4458-9732-0804732B8CC0}.Release|x86.Build.0 = Release|Win32
+		{07B216BF-4AEA-4A4F-A0F1-DC58F58AD98F}.Debug|x64.ActiveCfg = Debug|x64
+		{07B216BF-4AEA-4A4F-A0F1-DC58F58AD98F}.Debug|x64.Build.0 = Debug|x64
+		{07B216BF-4AEA-4A4F-A0F1-DC58F58AD98F}.Debug|x86.ActiveCfg = Debug|Win32
+		{07B216BF-4AEA-4A4F-A0F1-DC58F58AD98F}.Debug|x86.Build.0 = Debug|Win32
+		{07B216BF-4AEA-4A4F-A0F1-DC58F58AD98F}.Release|x64.ActiveCfg = Release|x64
+		{07B216BF-4AEA-4A4F-A0F1-DC58F58AD98F}.Release|x64.Build.0 = Release|x64
+		{07B216BF-4AEA-4A4F-A0F1-DC58F58AD98F}.Release|x86.ActiveCfg = Release|Win32
+		{07B216BF-4AEA-4A4F-A0F1-DC58F58AD98F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
