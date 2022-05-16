@@ -47,6 +47,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1712 손익분기점", "171
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2839 설탕배달", "2839 설탕배달\2839 설탕배달.vcxproj", "{29E64ADD-51D7-46E9-BA0F-4545C7E4DB1E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2292 벌집", "2292 벌집\2292 벌집.vcxproj", "{E353128D-C7BC-413E-8879-0FCA4C6BB617}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -231,6 +233,14 @@ Global
 		{29E64ADD-51D7-46E9-BA0F-4545C7E4DB1E}.Release|x64.Build.0 = Release|x64
 		{29E64ADD-51D7-46E9-BA0F-4545C7E4DB1E}.Release|x86.ActiveCfg = Release|Win32
 		{29E64ADD-51D7-46E9-BA0F-4545C7E4DB1E}.Release|x86.Build.0 = Release|Win32
+		{E353128D-C7BC-413E-8879-0FCA4C6BB617}.Debug|x64.ActiveCfg = Debug|x64
+		{E353128D-C7BC-413E-8879-0FCA4C6BB617}.Debug|x64.Build.0 = Debug|x64
+		{E353128D-C7BC-413E-8879-0FCA4C6BB617}.Debug|x86.ActiveCfg = Debug|Win32
+		{E353128D-C7BC-413E-8879-0FCA4C6BB617}.Debug|x86.Build.0 = Debug|Win32
+		{E353128D-C7BC-413E-8879-0FCA4C6BB617}.Release|x64.ActiveCfg = Release|x64
+		{E353128D-C7BC-413E-8879-0FCA4C6BB617}.Release|x64.Build.0 = Release|x64
+		{E353128D-C7BC-413E-8879-0FCA4C6BB617}.Release|x86.ActiveCfg = Release|Win32
+		{E353128D-C7BC-413E-8879-0FCA4C6BB617}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
