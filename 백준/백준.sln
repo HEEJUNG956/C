@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11651 좌표정렬하기2",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1181 단어정렬", "1181 단어정렬\1181 단어정렬.vcxproj", "{E4B0A874-E399-4D6A-BEFD-E3F3EF6453E8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1009 분산처리", "1009 분산처리\1009 분산처리.vcxproj", "{150AB712-01E5-47FA-A66C-91228A225721}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{E4B0A874-E399-4D6A-BEFD-E3F3EF6453E8}.Release|x64.Build.0 = Release|x64
 		{E4B0A874-E399-4D6A-BEFD-E3F3EF6453E8}.Release|x86.ActiveCfg = Release|Win32
 		{E4B0A874-E399-4D6A-BEFD-E3F3EF6453E8}.Release|x86.Build.0 = Release|Win32
+		{150AB712-01E5-47FA-A66C-91228A225721}.Debug|x64.ActiveCfg = Debug|x64
+		{150AB712-01E5-47FA-A66C-91228A225721}.Debug|x64.Build.0 = Debug|x64
+		{150AB712-01E5-47FA-A66C-91228A225721}.Debug|x86.ActiveCfg = Debug|Win32
+		{150AB712-01E5-47FA-A66C-91228A225721}.Debug|x86.Build.0 = Debug|Win32
+		{150AB712-01E5-47FA-A66C-91228A225721}.Release|x64.ActiveCfg = Release|x64
+		{150AB712-01E5-47FA-A66C-91228A225721}.Release|x64.Build.0 = Release|x64
+		{150AB712-01E5-47FA-A66C-91228A225721}.Release|x86.ActiveCfg = Release|Win32
+		{150AB712-01E5-47FA-A66C-91228A225721}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
