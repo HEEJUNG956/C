@@ -51,6 +51,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2292 벌집", "2292 벌집\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1193 분수찾기", "1193 분수찾기\1193 분수찾기.vcxproj", "{4E766DEB-4540-4A83-9DFC-03F387F32914}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10250 ACM호텔", "10250 ACM호텔\10250 ACM호텔.vcxproj", "{A4DF5C2E-3087-4697-94D6-BB705C7A1477}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -251,6 +253,14 @@ Global
 		{4E766DEB-4540-4A83-9DFC-03F387F32914}.Release|x64.Build.0 = Release|x64
 		{4E766DEB-4540-4A83-9DFC-03F387F32914}.Release|x86.ActiveCfg = Release|Win32
 		{4E766DEB-4540-4A83-9DFC-03F387F32914}.Release|x86.Build.0 = Release|Win32
+		{A4DF5C2E-3087-4697-94D6-BB705C7A1477}.Debug|x64.ActiveCfg = Debug|x64
+		{A4DF5C2E-3087-4697-94D6-BB705C7A1477}.Debug|x64.Build.0 = Debug|x64
+		{A4DF5C2E-3087-4697-94D6-BB705C7A1477}.Debug|x86.ActiveCfg = Debug|Win32
+		{A4DF5C2E-3087-4697-94D6-BB705C7A1477}.Debug|x86.Build.0 = Debug|Win32
+		{A4DF5C2E-3087-4697-94D6-BB705C7A1477}.Release|x64.ActiveCfg = Release|x64
+		{A4DF5C2E-3087-4697-94D6-BB705C7A1477}.Release|x64.Build.0 = Release|x64
+		{A4DF5C2E-3087-4697-94D6-BB705C7A1477}.Release|x86.ActiveCfg = Release|Win32
+		{A4DF5C2E-3087-4697-94D6-BB705C7A1477}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
