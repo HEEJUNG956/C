@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1929 소수구하기", "192
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "25191 치킨댄스를 추는 곰곰이를 본 임스", "25191 치킨댄스를 추는 곰곰이를 본 임스\25191 치킨댄스를 추는 곰곰이를 본 임스.vcxproj", "{28820F0A-EC02-4998-BA57-8F7FC569CD47}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "25175 두부두부두부", "25175 두부두부두부\25175 두부두부두부.vcxproj", "{341942CE-6BF8-482E-8A59-1C641CADEF23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{28820F0A-EC02-4998-BA57-8F7FC569CD47}.Release|x64.Build.0 = Release|x64
 		{28820F0A-EC02-4998-BA57-8F7FC569CD47}.Release|x86.ActiveCfg = Release|Win32
 		{28820F0A-EC02-4998-BA57-8F7FC569CD47}.Release|x86.Build.0 = Release|Win32
+		{341942CE-6BF8-482E-8A59-1C641CADEF23}.Debug|x64.ActiveCfg = Debug|x64
+		{341942CE-6BF8-482E-8A59-1C641CADEF23}.Debug|x64.Build.0 = Debug|x64
+		{341942CE-6BF8-482E-8A59-1C641CADEF23}.Debug|x86.ActiveCfg = Debug|Win32
+		{341942CE-6BF8-482E-8A59-1C641CADEF23}.Debug|x86.Build.0 = Debug|Win32
+		{341942CE-6BF8-482E-8A59-1C641CADEF23}.Release|x64.ActiveCfg = Release|x64
+		{341942CE-6BF8-482E-8A59-1C641CADEF23}.Release|x64.Build.0 = Release|x64
+		{341942CE-6BF8-482E-8A59-1C641CADEF23}.Release|x86.ActiveCfg = Release|Win32
+		{341942CE-6BF8-482E-8A59-1C641CADEF23}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
