@@ -83,6 +83,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "thread와 async차이점", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "async 사용법", "async 사용법\async 사용법.vcxproj", "{6990DA89-A416-4BBC-B07B-E84B5AF4EA46}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RAII란", "RAII란\RAII란.vcxproj", "{4FE9760F-8E80-4EE1-804A-67918624A081}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -411,6 +413,14 @@ Global
 		{6990DA89-A416-4BBC-B07B-E84B5AF4EA46}.Release|x64.Build.0 = Release|x64
 		{6990DA89-A416-4BBC-B07B-E84B5AF4EA46}.Release|x86.ActiveCfg = Release|Win32
 		{6990DA89-A416-4BBC-B07B-E84B5AF4EA46}.Release|x86.Build.0 = Release|Win32
+		{4FE9760F-8E80-4EE1-804A-67918624A081}.Debug|x64.ActiveCfg = Debug|x64
+		{4FE9760F-8E80-4EE1-804A-67918624A081}.Debug|x64.Build.0 = Debug|x64
+		{4FE9760F-8E80-4EE1-804A-67918624A081}.Debug|x86.ActiveCfg = Debug|Win32
+		{4FE9760F-8E80-4EE1-804A-67918624A081}.Debug|x86.Build.0 = Debug|Win32
+		{4FE9760F-8E80-4EE1-804A-67918624A081}.Release|x64.ActiveCfg = Release|x64
+		{4FE9760F-8E80-4EE1-804A-67918624A081}.Release|x64.Build.0 = Release|x64
+		{4FE9760F-8E80-4EE1-804A-67918624A081}.Release|x86.ActiveCfg = Release|Win32
+		{4FE9760F-8E80-4EE1-804A-67918624A081}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
