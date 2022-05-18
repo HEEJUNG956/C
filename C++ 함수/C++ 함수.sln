@@ -55,6 +55,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inline함수", "inline함�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "함수객체란", "함수객체란\함수객체란.vcxproj", "{96A344D9-755F-4689-92E9-85EF5E586ECA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "함수포인터", "함수포인터\함수포인터.vcxproj", "{56D1DAF8-4AB5-4E99-8F75-59BCD8386E49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -271,6 +273,14 @@ Global
 		{96A344D9-755F-4689-92E9-85EF5E586ECA}.Release|x64.Build.0 = Release|x64
 		{96A344D9-755F-4689-92E9-85EF5E586ECA}.Release|x86.ActiveCfg = Release|Win32
 		{96A344D9-755F-4689-92E9-85EF5E586ECA}.Release|x86.Build.0 = Release|Win32
+		{56D1DAF8-4AB5-4E99-8F75-59BCD8386E49}.Debug|x64.ActiveCfg = Debug|x64
+		{56D1DAF8-4AB5-4E99-8F75-59BCD8386E49}.Debug|x64.Build.0 = Debug|x64
+		{56D1DAF8-4AB5-4E99-8F75-59BCD8386E49}.Debug|x86.ActiveCfg = Debug|Win32
+		{56D1DAF8-4AB5-4E99-8F75-59BCD8386E49}.Debug|x86.Build.0 = Debug|Win32
+		{56D1DAF8-4AB5-4E99-8F75-59BCD8386E49}.Release|x64.ActiveCfg = Release|x64
+		{56D1DAF8-4AB5-4E99-8F75-59BCD8386E49}.Release|x64.Build.0 = Release|x64
+		{56D1DAF8-4AB5-4E99-8F75-59BCD8386E49}.Release|x86.ActiveCfg = Release|Win32
+		{56D1DAF8-4AB5-4E99-8F75-59BCD8386E49}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
