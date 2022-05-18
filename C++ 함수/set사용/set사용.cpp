@@ -49,7 +49,7 @@ int main()
 
     for_each(s.begin(), s.end(), [](int n)
         {
-            printf("%d ", n)
+            printf("%d ", n);
         });
     printf("\n");
     return 0;
