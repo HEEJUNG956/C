@@ -75,6 +75,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스마트포인터2 shared_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스마트포인터3 weak_ptr", "스마트포인터3 weak_ptr\스마트포인터3 weak_ptr.vcxproj", "{C7958C53-E706-4E81-9A8D-8B9FE065E7B0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "파일입출력 Window전용", "파일입출력 Window전용\파일입출력 Window전용.vcxproj", "{2133207E-1284-41E4-AA42-7A2ADB20C252}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "파일입출력 사용자Window경로가져오기", "파일입출력 사용자Window경로가져오기\파일입출력 사용자Window경로가져오기.vcxproj", "{4A9FB7D3-534F-40D5-8F84-CD93FE27A178}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -371,6 +375,22 @@ Global
 		{C7958C53-E706-4E81-9A8D-8B9FE065E7B0}.Release|x64.Build.0 = Release|x64
 		{C7958C53-E706-4E81-9A8D-8B9FE065E7B0}.Release|x86.ActiveCfg = Release|Win32
 		{C7958C53-E706-4E81-9A8D-8B9FE065E7B0}.Release|x86.Build.0 = Release|Win32
+		{2133207E-1284-41E4-AA42-7A2ADB20C252}.Debug|x64.ActiveCfg = Debug|x64
+		{2133207E-1284-41E4-AA42-7A2ADB20C252}.Debug|x64.Build.0 = Debug|x64
+		{2133207E-1284-41E4-AA42-7A2ADB20C252}.Debug|x86.ActiveCfg = Debug|Win32
+		{2133207E-1284-41E4-AA42-7A2ADB20C252}.Debug|x86.Build.0 = Debug|Win32
+		{2133207E-1284-41E4-AA42-7A2ADB20C252}.Release|x64.ActiveCfg = Release|x64
+		{2133207E-1284-41E4-AA42-7A2ADB20C252}.Release|x64.Build.0 = Release|x64
+		{2133207E-1284-41E4-AA42-7A2ADB20C252}.Release|x86.ActiveCfg = Release|Win32
+		{2133207E-1284-41E4-AA42-7A2ADB20C252}.Release|x86.Build.0 = Release|Win32
+		{4A9FB7D3-534F-40D5-8F84-CD93FE27A178}.Debug|x64.ActiveCfg = Debug|x64
+		{4A9FB7D3-534F-40D5-8F84-CD93FE27A178}.Debug|x64.Build.0 = Debug|x64
+		{4A9FB7D3-534F-40D5-8F84-CD93FE27A178}.Debug|x86.ActiveCfg = Debug|Win32
+		{4A9FB7D3-534F-40D5-8F84-CD93FE27A178}.Debug|x86.Build.0 = Debug|Win32
+		{4A9FB7D3-534F-40D5-8F84-CD93FE27A178}.Release|x64.ActiveCfg = Release|x64
+		{4A9FB7D3-534F-40D5-8F84-CD93FE27A178}.Release|x64.Build.0 = Release|x64
+		{4A9FB7D3-534F-40D5-8F84-CD93FE27A178}.Release|x86.ActiveCfg = Release|Win32
+		{4A9FB7D3-534F-40D5-8F84-CD93FE27A178}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
