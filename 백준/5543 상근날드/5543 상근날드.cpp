@@ -8,7 +8,7 @@ int main()
     int cheapest_beverage = 9999;
     for (int i = 0; i < 3; i++)
     {
-        scanf("%d", burgers[i]);
+        scanf("%d", &burgers[i]);
         if (burgers[i] < cheapest_burger)
             cheapest_burger = burgers[i];
     }
