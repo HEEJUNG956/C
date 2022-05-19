@@ -1,25 +1,12 @@
-﻿#define _CRT_SECURE_NO_WARNINGS 
-#include <stdio.h>
+﻿#include <iostream>
+#include <fstream>
+using namespace std;
+
 int main()
 {
-    int a, b;
-    scanf("%d %d", &a, &b);
-    char temp;
-
-    if (a && b == 1)
-        printf("참\n");
-    else
-        printf("거짓\n");
-
-    if (a || b == 1)
-        printf("참\n");
-    else
-        printf("거짓\n");
-
-    if (!a == 1)
-        printf("참\n");
-    else
-        printf("거짓\n");
+    ofstream fout;
+    fout.open("test.txt");
+    fout << 1 << ' ' << 2 << '\t' << 3 << '\n' << 4;
 
     return 0;
 }
