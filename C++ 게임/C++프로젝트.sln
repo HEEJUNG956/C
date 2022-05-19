@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "짝맞추기", "짝맞추기\짝맞추기.vcxproj", "{D6137F96-0A57-49E3-A4A3-889D4A0B5D3B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "은행계좌 관리프로그램", "은행계좌 관리프로그램\은행계좌 관리프로그램.vcxproj", "{E76BDB6A-1FEC-4F1C-A897-9F591A6B0885}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{D6137F96-0A57-49E3-A4A3-889D4A0B5D3B}.Release|x64.Build.0 = Release|x64
 		{D6137F96-0A57-49E3-A4A3-889D4A0B5D3B}.Release|x86.ActiveCfg = Release|Win32
 		{D6137F96-0A57-49E3-A4A3-889D4A0B5D3B}.Release|x86.Build.0 = Release|Win32
+		{E76BDB6A-1FEC-4F1C-A897-9F591A6B0885}.Debug|x64.ActiveCfg = Debug|x64
+		{E76BDB6A-1FEC-4F1C-A897-9F591A6B0885}.Debug|x64.Build.0 = Debug|x64
+		{E76BDB6A-1FEC-4F1C-A897-9F591A6B0885}.Debug|x86.ActiveCfg = Debug|Win32
+		{E76BDB6A-1FEC-4F1C-A897-9F591A6B0885}.Debug|x86.Build.0 = Debug|Win32
+		{E76BDB6A-1FEC-4F1C-A897-9F591A6B0885}.Release|x64.ActiveCfg = Release|x64
+		{E76BDB6A-1FEC-4F1C-A897-9F591A6B0885}.Release|x64.Build.0 = Release|x64
+		{E76BDB6A-1FEC-4F1C-A897-9F591A6B0885}.Release|x86.ActiveCfg = Release|Win32
+		{E76BDB6A-1FEC-4F1C-A897-9F591A6B0885}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
