@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "팩토리얼", "팩토리�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "피보나치", "피보나치\피보나치.vcxproj", "{13CB0945-764E-46F8-8003-B0E07C417968}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "폭탄게임(지뢰찾기)", "폭탄게임(지뢰찾기)\폭탄게임(지뢰찾기).vcxproj", "{B4D04E36-1DA7-452C-BDD8-B29251665DB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{13CB0945-764E-46F8-8003-B0E07C417968}.Release|x64.Build.0 = Release|x64
 		{13CB0945-764E-46F8-8003-B0E07C417968}.Release|x86.ActiveCfg = Release|Win32
 		{13CB0945-764E-46F8-8003-B0E07C417968}.Release|x86.Build.0 = Release|Win32
+		{B4D04E36-1DA7-452C-BDD8-B29251665DB1}.Debug|x64.ActiveCfg = Debug|x64
+		{B4D04E36-1DA7-452C-BDD8-B29251665DB1}.Debug|x64.Build.0 = Debug|x64
+		{B4D04E36-1DA7-452C-BDD8-B29251665DB1}.Debug|x86.ActiveCfg = Debug|Win32
+		{B4D04E36-1DA7-452C-BDD8-B29251665DB1}.Debug|x86.Build.0 = Debug|Win32
+		{B4D04E36-1DA7-452C-BDD8-B29251665DB1}.Release|x64.ActiveCfg = Release|x64
+		{B4D04E36-1DA7-452C-BDD8-B29251665DB1}.Release|x64.Build.0 = Release|x64
+		{B4D04E36-1DA7-452C-BDD8-B29251665DB1}.Release|x86.ActiveCfg = Release|Win32
+		{B4D04E36-1DA7-452C-BDD8-B29251665DB1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
