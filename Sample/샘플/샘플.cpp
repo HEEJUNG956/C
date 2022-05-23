@@ -1,17 +1,24 @@
 ﻿#include <stdio.h>
 #include <windows.h>
+#include <iostream>
+using namespace std;
+void staticTest()
+{
+    int local_count = 0;
+    static int static_count = 0;
+    local_count++;
+    static_count++;
+
+    printf("local_count : %d\n", local_count);
+    printf("static_count : %d\n", static_count);
+}
 
 int main()
 {
-    int a;
-    while (1) {
-        printf("숫자입력(1:초기화, 2: 종료) : ");
-        scanf("%d", &a);
-        if (a == 1) {
-            system("cls");
-        }
-        else if (a == 2) {
-            break;
-        }
-    }
+    cout << "staticTest함수 1번째호출 : \n";
+    staticTest();
+    cout << "staticTest함수 2번째호출 : \n";
+    staticTest();
+    cout << "staticTest함수 3번째호출 : \n";
+    staticTest();
 }
