@@ -37,15 +37,16 @@ int main()
             player = "가위";
             break;
         }
-        };
-
-        if (temp < 1 || temp > 3)
+        default:
         {
             printf("잘못입력했습니다.\n");
             system("pause");
             system("cls");
-            continue;
+            break;
         }
+        };
+
+
         
         
         printf("플레이어는 %s를 냈습니다.\n", player.c_str());
@@ -68,14 +69,13 @@ int main()
                 computer = "보";
                 break;
             }
-        }
-
-        if (temp_c < 1 || temp_c > 3)
-        {
-            printf("잘못입력했습니다.\n");
-            system("pause");
-            system("cls");
-            continue;
+            default:
+            {
+                printf("잘못입력했습니다.\n");
+                system("pause");
+                system("cls");
+                break;
+            }
         }
         
         printf("컴퓨터는 %s를 냈습니다.\n", computer.c_str());
@@ -106,7 +106,8 @@ int main()
             else if (computer == "보")
                 printf("비겼습니다.\n");
         } 
-        
+        system("pause");
+        system("cls");
     }
     
 }

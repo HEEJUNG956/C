@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "간단한 구구단", "간�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "별찍기 피라미드 다이아", "별찍기 피라미드 다이아\별찍기 피라미드 다이아.vcxproj", "{EA0663FA-D30B-4F4A-AA60-E7C0A8D6D679}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "자판기프로그램", "자판기프로그램\자판기프로그램.vcxproj", "{DFFA7035-F353-465B-9015-3D209F882C95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{EA0663FA-D30B-4F4A-AA60-E7C0A8D6D679}.Release|x64.Build.0 = Release|x64
 		{EA0663FA-D30B-4F4A-AA60-E7C0A8D6D679}.Release|x86.ActiveCfg = Release|Win32
 		{EA0663FA-D30B-4F4A-AA60-E7C0A8D6D679}.Release|x86.Build.0 = Release|Win32
+		{DFFA7035-F353-465B-9015-3D209F882C95}.Debug|x64.ActiveCfg = Debug|x64
+		{DFFA7035-F353-465B-9015-3D209F882C95}.Debug|x64.Build.0 = Debug|x64
+		{DFFA7035-F353-465B-9015-3D209F882C95}.Debug|x86.ActiveCfg = Debug|Win32
+		{DFFA7035-F353-465B-9015-3D209F882C95}.Debug|x86.Build.0 = Debug|Win32
+		{DFFA7035-F353-465B-9015-3D209F882C95}.Release|x64.ActiveCfg = Release|x64
+		{DFFA7035-F353-465B-9015-3D209F882C95}.Release|x64.Build.0 = Release|x64
+		{DFFA7035-F353-465B-9015-3D209F882C95}.Release|x86.ActiveCfg = Release|Win32
+		{DFFA7035-F353-465B-9015-3D209F882C95}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
