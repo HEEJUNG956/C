@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include <random>
-#include<Windows.h>
+#include <Windows.h>
 using namespace std;
 
 int main()
