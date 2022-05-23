@@ -192,7 +192,10 @@ int main()
         
             while (1)
             {
-                printf("돈을 넣어주시길 바랍니다.\n");\
+                if (coin == 0)
+                    break;
+                printf("돈을 넣어주시길 바랍니다.\n");
+                printf("투입한 돈 입력 : ");
                 scanf_s("%d", &money);
                 if (money > coin)
                 {
@@ -211,8 +214,8 @@ int main()
                 else if (money < coin)
                 {
                     printf("투입하신 돈이 부족합니다.\n");
+                    system("cls");
                 }
-                
             }
         system("pause");
         system("cls");
