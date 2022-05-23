@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "샘플", "샘플\샘플.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "랜덤행맨", "랜덤행맨\랜덤행맨.vcxproj", "{1F66EEFC-CC2A-43FD-9542-492E2A88E2C3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "별찍기", "별찍기\별찍기.vcxproj", "{FC240FD5-9D16-43F9-8E7D-15A3947F549A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{1F66EEFC-CC2A-43FD-9542-492E2A88E2C3}.Release|x64.Build.0 = Release|x64
 		{1F66EEFC-CC2A-43FD-9542-492E2A88E2C3}.Release|x86.ActiveCfg = Release|Win32
 		{1F66EEFC-CC2A-43FD-9542-492E2A88E2C3}.Release|x86.Build.0 = Release|Win32
+		{FC240FD5-9D16-43F9-8E7D-15A3947F549A}.Debug|x64.ActiveCfg = Debug|x64
+		{FC240FD5-9D16-43F9-8E7D-15A3947F549A}.Debug|x64.Build.0 = Debug|x64
+		{FC240FD5-9D16-43F9-8E7D-15A3947F549A}.Debug|x86.ActiveCfg = Debug|Win32
+		{FC240FD5-9D16-43F9-8E7D-15A3947F549A}.Debug|x86.Build.0 = Debug|Win32
+		{FC240FD5-9D16-43F9-8E7D-15A3947F549A}.Release|x64.ActiveCfg = Release|x64
+		{FC240FD5-9D16-43F9-8E7D-15A3947F549A}.Release|x64.Build.0 = Release|x64
+		{FC240FD5-9D16-43F9-8E7D-15A3947F549A}.Release|x86.ActiveCfg = Release|Win32
+		{FC240FD5-9D16-43F9-8E7D-15A3947F549A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
