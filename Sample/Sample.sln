@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "랜덤행맨", "랜덤행�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "별찍기", "별찍기\별찍기.vcxproj", "{FC240FD5-9D16-43F9-8E7D-15A3947F549A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "팩토리얼", "팩토리얼\팩토리얼.vcxproj", "{2428697B-2EC6-4D2E-B4A5-7DE6A0A872F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{FC240FD5-9D16-43F9-8E7D-15A3947F549A}.Release|x64.Build.0 = Release|x64
 		{FC240FD5-9D16-43F9-8E7D-15A3947F549A}.Release|x86.ActiveCfg = Release|Win32
 		{FC240FD5-9D16-43F9-8E7D-15A3947F549A}.Release|x86.Build.0 = Release|Win32
+		{2428697B-2EC6-4D2E-B4A5-7DE6A0A872F6}.Debug|x64.ActiveCfg = Debug|x64
+		{2428697B-2EC6-4D2E-B4A5-7DE6A0A872F6}.Debug|x64.Build.0 = Debug|x64
+		{2428697B-2EC6-4D2E-B4A5-7DE6A0A872F6}.Debug|x86.ActiveCfg = Debug|Win32
+		{2428697B-2EC6-4D2E-B4A5-7DE6A0A872F6}.Debug|x86.Build.0 = Debug|Win32
+		{2428697B-2EC6-4D2E-B4A5-7DE6A0A872F6}.Release|x64.ActiveCfg = Release|x64
+		{2428697B-2EC6-4D2E-B4A5-7DE6A0A872F6}.Release|x64.Build.0 = Release|x64
+		{2428697B-2EC6-4D2E-B4A5-7DE6A0A872F6}.Release|x86.ActiveCfg = Release|Win32
+		{2428697B-2EC6-4D2E-B4A5-7DE6A0A872F6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

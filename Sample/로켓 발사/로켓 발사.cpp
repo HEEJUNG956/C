@@ -4,11 +4,12 @@ int main()
 {
     printf("과제명 : 로켓\n");
     printf("--하늘----하늘-----하늘-----구름----구름\n");
-    while (1)
+    for(;;)
     {
         printf("  ▲ \n");
         printf("◁▤▷\n");
         printf(" ┘└ \n");
+        printf("wwwww\n");
     }
 
     
