@@ -187,6 +187,7 @@ int main()
         {
             printf("선택하신 음료는 %s이고 가격은 %d입니다.\n", select.c_str(), coin);
         }
+        system("cls");
        
         int money;
         
@@ -194,6 +195,7 @@ int main()
             {
                 if (coin == 0)
                     break;
+                printf("선택하신 음료는 %s이고 가격은 %d입니다.\n", select.c_str(), coin);
                 printf("돈을 넣어주시길 바랍니다.\n");
                 printf("투입한 돈 입력 : ");
                 scanf_s("%d", &money);
@@ -214,8 +216,8 @@ int main()
                 else if (money < coin)
                 {
                     printf("투입하신 돈이 부족합니다.\n");
-                    system("cls");
                 }
+                
             }
         system("pause");
         system("cls");
