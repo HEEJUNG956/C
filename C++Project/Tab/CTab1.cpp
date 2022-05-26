@@ -1,0 +1,34 @@
+﻿// CTab1.cpp: 구현 파일
+//
+
+#include "pch.h"
+#include "Tab.h"
+#include "afxdialogex.h"
+#include "CTab1.h"
+
+
+// CTab1 대화 상자
+
+IMPLEMENT_DYNAMIC(CTab1, CDialogEx)
+
+CTab1::CTab1(CWnd* pParent /*=nullptr*/)
+	: CDialogEx(IDD_DIALOG1, pParent)
+{
+
+}
+
+CTab1::~CTab1()
+{
+}
+
+void CTab1::DoDataExchange(CDataExchange* pDX)
+{
+	CDialogEx::DoDataExchange(pDX);
+}
+
+
+BEGIN_MESSAGE_MAP(CTab1, CDialogEx)
+END_MESSAGE_MAP()
+
+
+// CTab1 메시지 처리기
