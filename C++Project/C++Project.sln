@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Diglog", "Diglog\Diglog.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tab", "Tab\Tab.vcxproj", "{CEB5CCF9-3B0F-4E0E-A2CB-174FFC624225}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScrollBar", "ScrollBar\ScrollBar.vcxproj", "{1B2F80DA-3DBE-496E-BAA5-A39B628361D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{CEB5CCF9-3B0F-4E0E-A2CB-174FFC624225}.Release|x64.Build.0 = Release|x64
 		{CEB5CCF9-3B0F-4E0E-A2CB-174FFC624225}.Release|x86.ActiveCfg = Release|Win32
 		{CEB5CCF9-3B0F-4E0E-A2CB-174FFC624225}.Release|x86.Build.0 = Release|Win32
+		{1B2F80DA-3DBE-496E-BAA5-A39B628361D0}.Debug|x64.ActiveCfg = Debug|x64
+		{1B2F80DA-3DBE-496E-BAA5-A39B628361D0}.Debug|x64.Build.0 = Debug|x64
+		{1B2F80DA-3DBE-496E-BAA5-A39B628361D0}.Debug|x86.ActiveCfg = Debug|Win32
+		{1B2F80DA-3DBE-496E-BAA5-A39B628361D0}.Debug|x86.Build.0 = Debug|Win32
+		{1B2F80DA-3DBE-496E-BAA5-A39B628361D0}.Release|x64.ActiveCfg = Release|x64
+		{1B2F80DA-3DBE-496E-BAA5-A39B628361D0}.Release|x64.Build.0 = Release|x64
+		{1B2F80DA-3DBE-496E-BAA5-A39B628361D0}.Release|x86.ActiveCfg = Release|Win32
+		{1B2F80DA-3DBE-496E-BAA5-A39B628361D0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
