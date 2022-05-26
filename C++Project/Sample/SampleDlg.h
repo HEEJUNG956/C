@@ -1,22 +1,20 @@
 ﻿
-// ScrollBarDlg.h: 헤더 파일
+// SampleDlg.h: 헤더 파일
 //
 
 #pragma once
 
 
-// CScrollBarDlg 대화 상자
-class CScrollBarDlg : public CDialogEx
+// CSampleDlg 대화 상자
+class CSampleDlg : public CDialogEx
 {
 // 생성입니다.
 public:
-	CScrollBarDlg(CWnd* pParent = nullptr);	// 표준 생성자입니다.
+	CSampleDlg(CWnd* pParent = nullptr);	// 표준 생성자입니다.
 
-	POINT c;
-	POINT origin;
 // 대화 상자 데이터입니다.
 #ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_SCROLLBAR_DIALOG };
+	enum { IDD = IDD_SAMPLE_DIALOG };
 #endif
 
 	protected:
@@ -33,9 +31,4 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
-public:
-	CScrollBar m_Vscroll;
-	CScrollBar m_HScroll;
-	afx_msg void OnHScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar);
-	afx_msg void OnVScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar);
 };

@@ -1,11 +1,11 @@
 ﻿
-// ScrollBarDlg.cpp: 구현 파일
+// SampleDlg.cpp: 구현 파일
 //
 
 #include "pch.h"
 #include "framework.h"
-#include "ScrollBar.h"
-#include "ScrollBarDlg.h"
+#include "Sample.h"
+#include "SampleDlg.h"
 #include "afxdialogex.h"
 
 #ifdef _DEBUG
@@ -46,35 +46,31 @@ BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
 END_MESSAGE_MAP()
 
 
-// CScrollBarDlg 대화 상자
+// CSampleDlg 대화 상자
 
 
 
-CScrollBarDlg::CScrollBarDlg(CWnd* pParent /*=nullptr*/)
-	: CDialogEx(IDD_SCROLLBAR_DIALOG, pParent)
+CSampleDlg::CSampleDlg(CWnd* pParent /*=nullptr*/)
+	: CDialogEx(IDD_SAMPLE_DIALOG, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
 
-void CScrollBarDlg::DoDataExchange(CDataExchange* pDX)
+void CSampleDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
-	DDX_Control(pDX, IDC_SCROLLBAR1, m_Vscroll);
-	DDX_Control(pDX, IDC_SCROLLBAR2, m_HScroll);
 }
 
-BEGIN_MESSAGE_MAP(CScrollBarDlg, CDialogEx)
+BEGIN_MESSAGE_MAP(CSampleDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
-	ON_WM_HSCROLL()
-	ON_WM_VSCROLL()
 END_MESSAGE_MAP()
 
 
-// CScrollBarDlg 메시지 처리기
+// CSampleDlg 메시지 처리기
 
-BOOL CScrollBarDlg::OnInitDialog()
+BOOL CSampleDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 
@@ -105,25 +101,10 @@ BOOL CScrollBarDlg::OnInitDialog()
 
 	// TODO: 여기에 추가 초기화 작업을 추가합니다.
 
-	CRect VScroll;
-	CRect HScroll;
-
-	m_Vscroll.GetWindowRect(&VScroll);
-	m_HScroll.GetWindowRect(&HScroll);
-
-	m_Vscroll.SetScrollRange(0, VScroll.Height());
-	m_HScroll.SetScrollRange(0, HScroll.Width());
-
-	c.x = 0;
-	c.y = 0;
-
-	origin.x = HScroll.left;
-	origin.y = VScroll.top;
-
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
 
-void CScrollBarDlg::OnSysCommand(UINT nID, LPARAM lParam)
+void CSampleDlg::OnSysCommand(UINT nID, LPARAM lParam)
 {
 	if ((nID & 0xFFF0) == IDM_ABOUTBOX)
 	{
@@ -140,7 +121,7 @@ void CScrollBarDlg::OnSysCommand(UINT nID, LPARAM lParam)
 //  아래 코드가 필요합니다.  문서/뷰 모델을 사용하는 MFC 애플리케이션의 경우에는
 //  프레임워크에서 이 작업을 자동으로 수행합니다.
 
-void CScrollBarDlg::OnPaint()
+void CSampleDlg::OnPaint()
 {
 	if (IsIconic())
 	{
@@ -162,64 +143,13 @@ void CScrollBarDlg::OnPaint()
 	else
 	{
 		CDialogEx::OnPaint();
-
-		CClientDC DC(this);
-		POINT t;
-		t.x = c.x + origin.x;
-		t.y = c.y + origin.y;
-		DC.Ellipse(t.x, t.y, t.x + 10, t.y + 10);
 	}
 }
 
 // 사용자가 최소화된 창을 끄는 동안에 커서가 표시되도록 시스템에서
 //  이 함수를 호출합니다.
-HCURSOR CScrollBarDlg::OnQueryDragIcon()
+HCURSOR CSampleDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
-
-
-void CScrollBarDlg::OnHScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar)
-{
-	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
-
-	if (pScrollBar->GetSafeHwnd() == m_HScroll.GetSafeHwnd())
-	{
-		int pos;
-		pos = m_HScroll.GetScrollPos();
-
-		if (nSBCode == SB_LINEDOWN) m_HScroll.SetScrollPos(pos + 10);
-		else if (nSBCode == SB_LINEUP) m_HScroll.SetScrollPos(pos - 10);
-		else if (nSBCode == SB_PAGEUP) m_HScroll.SetScrollPos(pos - 50);
-		else if (nSBCode == SB_PAGEDOWN) m_HScroll.SetScrollPos(pos + 50);
-		else if (nSBCode == SB_THUMBTRACK) m_HScroll.SetScrollPos(nPos);
-
-		c.x = m_HScroll.GetScrollPos();
-		OnPaint();
-	}
-
-	CDialogEx::OnHScroll(nSBCode, nPos, pScrollBar);
-}
-
-
-void CScrollBarDlg::OnVScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar)
-{
-	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
-	if (pScrollBar->GetSafeHwnd() == m_Vscroll.GetSafeHwnd())
-	{
-		int pos;
-		pos = m_Vscroll.GetScrollPos();
-
-		if (nSBCode == SB_LINEDOWN) m_Vscroll.SetScrollPos(pos + 10);
-		else if (nSBCode == SB_LINEUP) m_Vscroll.SetScrollPos(pos + 10);
-		else if (nSBCode == SB_PAGEUP) m_Vscroll.SetScrollPos(pos + 10);
-		else if (nSBCode == SB_PAGEDOWN) m_Vscroll.SetScrollPos(pos + 10);
-		else if (nSBCode == SB_THUMBTRACK) m_Vscroll.SetScrollPos(pos + 10);
-
-		c.y = m_Vscroll.GetScrollPos();
-		OnPaint();
-	}
-
-	CDialogEx::OnVScroll(nSBCode, nPos, pScrollBar);
-}
