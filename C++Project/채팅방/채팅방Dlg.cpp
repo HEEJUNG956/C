@@ -1,11 +1,11 @@
 ﻿
-// SampleDlg.cpp: 구현 파일
+// 채팅방Dlg.cpp: 구현 파일
 //
 
 #include "pch.h"
 #include "framework.h"
-#include "Sample.h"
-#include "SampleDlg.h"
+#include "채팅방.h"
+#include "채팅방Dlg.h"
 #include "afxdialogex.h"
 
 #ifdef _DEBUG
@@ -46,36 +46,31 @@ BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
 END_MESSAGE_MAP()
 
 
-// CSampleDlg 대화 상자
+// C채팅방Dlg 대화 상자
 
 
 
-CSampleDlg::CSampleDlg(CWnd* pParent /*=nullptr*/)
-	: CDialogEx(IDD_SAMPLE_DIALOG, pParent)
+C채팅방Dlg::C채팅방Dlg(CWnd* pParent /*=nullptr*/)
+	: CDialogEx(IDD_MY_DIALOG, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
 
-void CSampleDlg::DoDataExchange(CDataExchange* pDX)
+void C채팅방Dlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
-	DDX_Control(pDX, IDC_STATIC_DISP, m_staticDisp);
 }
 
-BEGIN_MESSAGE_MAP(CSampleDlg, CDialogEx)
+BEGIN_MESSAGE_MAP(C채팅방Dlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
-	ON_WM_TIMER()
-	ON_BN_CLICKED(IDC_BUTTON1, &CSampleDlg::OnBnClickedButton1)
-	ON_BN_CLICKED(IDC_BUTTON2, &CSampleDlg::OnBnClickedButton2)
-	ON_BN_CLICKED(IDC_BUTTON3, &CSampleDlg::OnBnClickedButton3)
 END_MESSAGE_MAP()
 
 
-// CSampleDlg 메시지 처리기
+// C채팅방Dlg 메시지 처리기
 
-BOOL CSampleDlg::OnInitDialog()
+BOOL C채팅방Dlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 
@@ -106,15 +101,10 @@ BOOL CSampleDlg::OnInitDialog()
 
 	// TODO: 여기에 추가 초기화 작업을 추가합니다.
 
-	m_Edit = (CEdit*)GetDlgItem(IDC_EDIT_NOWIZARD);
-	m_Edit->SetWindowTextW(_T("No Class Wizard Test"));
-
-	m_iCount = 0;
-	m_pThread = NULL;
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
 
-void CSampleDlg::OnSysCommand(UINT nID, LPARAM lParam)
+void C채팅방Dlg::OnSysCommand(UINT nID, LPARAM lParam)
 {
 	if ((nID & 0xFFF0) == IDM_ABOUTBOX)
 	{
@@ -131,7 +121,7 @@ void CSampleDlg::OnSysCommand(UINT nID, LPARAM lParam)
 //  아래 코드가 필요합니다.  문서/뷰 모델을 사용하는 MFC 애플리케이션의 경우에는
 //  프레임워크에서 이 작업을 자동으로 수행합니다.
 
-void CSampleDlg::OnPaint()
+void C채팅방Dlg::OnPaint()
 {
 	if (IsIconic())
 	{
@@ -158,65 +148,8 @@ void CSampleDlg::OnPaint()
 
 // 사용자가 최소화된 창을 끄는 동안에 커서가 표시되도록 시스템에서
 //  이 함수를 호출합니다.
-HCURSOR CSampleDlg::OnQueryDragIcon()
+HCURSOR C채팅방Dlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
-UINT CBasicThreadUseDlg::TestThread(LPVOID IpVoid)
-{
-	CBasicThreadUseDlg* pDlg = (CBasicThreadUseDlg*)IpVoid;
-	int iNumber = 0;
-	CString sTxt;
-
-	while (1)
-	{
-		sTxt.Format(_T("%d"), iNumber++);
-		pDlg->m_staticDisp.SetWindowText(sTxt);
-		Sleep(1000);
-	}
-	return 0;
-}
-
-void CSampleDlg::OnTimer(UINT_PTR nIDEvent)
-{
-	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
-	CString sTxt;
-	switch (nIDEvent)
-	{
-	case 1:
-		sTxt.Format(_T("%d"), m_iCount++);
-		m_staticDisp.SetWindowTextW(sTxt);
-		Sleep(1000);
-		break;
-	}
-	CDialogEx::OnTimer(nIDEvent);
-}
-
-
-void CSampleDlg::OnBnClickedButton1()
-{
-	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	SetTimer(1, 1000, NULL);
-}
-
-
-void CSampleDlg::OnBnClickedButton2()
-{
-	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	KillTimer(1);
-}
-
-
-void CSampleDlg::OnBnClickedButton3()
-{
-	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	if (NULL == m_pThread)
-	{
-		m_pThread = ::AfxBeginThread(TestThread, this);
-		if (NULL == m_pThread)
-		{
-			::AfxMessageBox(_T("AfxBeginThread Fail"));
-		}
-	}
-}

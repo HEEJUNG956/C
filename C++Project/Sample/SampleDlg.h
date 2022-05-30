@@ -43,4 +43,6 @@ public:
 
 	CWinThread* m_pThread;
 	CStatic m_staticDisp;
+	afx_msg void OnBnClickedButton3();
+	static UINT TestThread(LPVOID IpVoid);
 };
