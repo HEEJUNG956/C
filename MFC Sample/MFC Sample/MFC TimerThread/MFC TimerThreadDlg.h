@@ -33,8 +33,14 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
-	CStatic m_staticDisp;
 	afx_msg void OnBnClickedButton1();
 	afx_msg void OnBnClickedButton2();
 	int m_iCount;
+
+	CWinThread* m_pThread;
+	CStatic m_staticDisp;
+
+	static UINT TestThread(LPVOID lpVoid);
+	afx_msg void OnBnClickedButton3();
+	afx_msg void OnBnClickedButton4();
 };

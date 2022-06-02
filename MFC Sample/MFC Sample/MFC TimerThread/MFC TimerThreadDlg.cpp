@@ -69,6 +69,8 @@ BEGIN_MESSAGE_MAP(CMFCTimerThreadDlg, CDialogEx)
 	ON_WM_TIMER()
 	ON_BN_CLICKED(IDC_BUTTON1, &CMFCTimerThreadDlg::OnBnClickedButton1)
 	ON_BN_CLICKED(IDC_BUTTON2, &CMFCTimerThreadDlg::OnBnClickedButton2)
+	ON_BN_CLICKED(IDC_BUTTON3, &CMFCTimerThreadDlg::OnBnClickedButton3)
+	ON_BN_CLICKED(IDC_BUTTON4, &CMFCTimerThreadDlg::OnBnClickedButton4)
 END_MESSAGE_MAP()
 
 
@@ -105,6 +107,9 @@ BOOL CMFCTimerThreadDlg::OnInitDialog()
 
 	// TODO: 여기에 추가 초기화 작업을 추가합니다.
 	m_iCount = 0;
+	m_pThread = NULL;
+
+
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
 
@@ -168,21 +173,73 @@ void CMFCTimerThreadDlg::OnTimer(UINT_PTR nIDEvent)
 	case 1:
 		sTxt.Format(_T("%d"), m_iCount++);
 		m_staticDisp.SetWindowTextW(sTxt);
+		Sleep(1000);
 		break;
 	}
 	CDialogEx::OnTimer(nIDEvent);
+}
+
+UINT CMFCTimerThreadDlg::TestThread(LPVOID lpVoid)
+{
+	CMFCTimerThreadDlg* pDlg = (CMFCTimerThreadDlg*)lpVoid;
+	int iNumber = 0;
+	CString sTxt;
+
+	while (1)
+	{
+		sTxt.Format(_T("%d"), iNumber++);
+		pDlg->m_staticDisp.SetWindowText(sTxt);
+		Sleep(1000);
+	}
+	return 0;
 }
 
 
 void CMFCTimerThreadDlg::OnBnClickedButton1()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	SetTimer(1, 1000, NULL);
+	m_pThread = ::AfxBeginThread(TestThread, this);
+	if (NULL == m_pThread)
+	{
+		::AfxMessageBox(_T("AfxBeginThread Fail"));
+	}
 }
 
 
 void CMFCTimerThreadDlg::OnBnClickedButton2()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	KillTimer(1);
+	if (NULL != m_pThread)
+	{
+		::SuspendThread(m_pThread->m_hThread);
+	}
+}
+
+
+
+void CMFCTimerThreadDlg::OnBnClickedButton3()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	if (NULL != m_pThread)
+	{
+		::ResumeThread(m_pThread->m_hThread);
+	}
+}
+
+
+void CMFCTimerThreadDlg::OnBnClickedButton4()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	if (NULL != m_pThread)
+	{
+		if (::TerminateThread(m_pThread->m_hThread, 1))
+		{
+			::CloseHandle(m_pThread->m_hThread);
+			m_pThread = NULL;
+		}
+		else
+		{
+			::AfxMessageBox(_T("TerminateThread Fail"));
+		}
+	}
 }
