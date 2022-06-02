@@ -102,6 +102,33 @@ BOOL CMFCTabControlDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 작은 아이콘을 설정합니다.
 
 	// TODO: 여기에 추가 초기화 작업을 추가합니다.
+	CRect rect;
+	m_tab.GetWindowRect(rect);
+	//m_tab.InsertItem(0, "탭1");
+	//m_tab.InsertItem(0, "탭2");
+	//m_tab.InsertItem(0, "탭3");
+	//m_tab.InsertItem(0, "탭4");
+	m_tab.SetCurSel(0);
+
+	dlg1 = new CDlgTab1;
+	dlg1->Create(IDD_DIALOG_TAB1, &m_tab);
+	dlg1->MoveWindow(0, 20, rect.Width(), rect.Height());
+	dlg1->ShowWindow(SW_SHOW);
+
+	dlg2 = new CDlgTab2;
+	dlg2->Create(IDD_DIALOG_TAB2, &m_tab);
+	dlg2->MoveWindow(0, 20, rect.Width(), rect.Height());
+	dlg2->ShowWindow(SW_HIDE);
+
+	dlg3 = new CDlgTab3;
+	dlg3->Create(IDD_DIALOG_TAB3, &m_tab);
+	dlg3->MoveWindow(0, 20, rect.Width(), rect.Height());
+	dlg3->ShowWindow(SW_HIDE);
+
+	dlg4 = new CDlgTab4;
+	dlg4->Create(IDD_DIALOG_TAB4, &m_tab);
+	dlg4->MoveWindow(0, 20, rect.Width(), rect.Height());
+	dlg4->ShowWindow(SW_HIDE);
 
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
@@ -160,5 +187,37 @@ HCURSOR CMFCTabControlDlg::OnQueryDragIcon()
 void CMFCTabControlDlg::OnSelchangeTabMain(NMHDR* pNMHDR, LRESULT* pResult)
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	*pResult = 0;
+	/*if (IDC_TAB_MAIN == pNMHDR->idFrom) 
+	{
+		int select = m_tab.GetCurSel();
+		switch (select) 
+		{
+		case 0:
+			dlg1->ShowWindow(SW_SHOW);
+			dlg2->ShowWindow(SW_HIDE);
+			dlg3->ShowWindow(SW_HIDE);
+			dlg4->ShowWindow(SW_HIDE);
+			break;
+		case 1:
+			dlg1->ShowWindow(SW_HIDE);
+			dlg2->ShowWindow(SW_SHOW);
+			dlg3->ShowWindow(SW_HIDE);
+			dlg4->ShowWindow(SW_HIDE);
+			break;
+		case 2:
+			dlg1->ShowWindow(SW_HIDE);
+			dlg2->ShowWindow(SW_HIDE);
+			dlg3->ShowWindow(SW_SHOW);
+			dlg4->ShowWindow(SW_HIDE);
+			break;
+		case 3:
+			dlg1->ShowWindow(SW_HIDE);
+			dlg2->ShowWindow(SW_HIDE);
+			dlg3->ShowWindow(SW_HIDE);
+			dlg4->ShowWindow(SW_SHOW);
+			break;
+		}
+	}
+	*/
+	pResult = 0;
 }

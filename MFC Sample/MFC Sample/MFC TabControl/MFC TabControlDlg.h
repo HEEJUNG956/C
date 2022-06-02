@@ -3,6 +3,11 @@
 //
 
 #pragma once
+#include "DlgTab1.h"
+#include "DlgTab2.h"
+#include "DlgTab3.h"
+#include "DlgTab4.h"
+#include "DlgTab5.h"
 
 // CMFCTabControlDlg 대화 상자
 class CMFCTabControlDlg : public CDialogEx
@@ -33,4 +38,9 @@ protected:
 public:
 	CTabCtrl m_tab;
 	afx_msg void OnSelchangeTabMain(NMHDR* pNMHDR, LRESULT* pResult);
+	CDlgTab1* dlg1;
+	CDlgTab2* dlg2;
+	CDlgTab3* dlg3;
+	CDlgTab4* dlg4;
+	CDlgTab5* dlg5;
 };
