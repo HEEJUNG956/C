@@ -1,12 +1,13 @@
 ﻿
-// 채팅방Dlg.cpp: 구현 파일
+// MFCApplication1Dlg.cpp: 구현 파일
 //
 
 #include "pch.h"
 #include "framework.h"
-#include "채팅방.h"
-#include "채팅방Dlg.h"
+#include "MFCApplication1.h"
+#include "MFCApplication1Dlg.h"
 #include "afxdialogex.h"
+#include "resource.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -46,36 +47,34 @@ BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
 END_MESSAGE_MAP()
 
 
-// C채팅방Dlg 대화 상자
+// CMFCApplication1Dlg 대화 상자
 
 
 
-C채팅방Dlg::C채팅방Dlg(CWnd* pParent /*=nullptr*/)
-	: CDialogEx(IDD_MY_DIALOG, pParent)
-	, m_strSend(_T(""))
-	, m_strStatus(_T(""))
+CMFCApplication1Dlg::CMFCApplication1Dlg(CWnd* pParent /*=nullptr*/)
+	: CDialogEx(IDD_MFCAPPLICATION1_DIALOG, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
 
-void C채팅방Dlg::DoDataExchange(CDataExchange* pDX)
+void CMFCApplication1Dlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
-	DDX_Control(pDX, IDC_EDIT_SEND, m_strSend);
-	DDX_Control(pDX, IDC_LIST1, m_list);
-	DDX_Control(pDX, IDC_STATIC_STATUS, m_strStatus);
 }
 
-BEGIN_MESSAGE_MAP(C채팅방Dlg, CDialogEx)
+BEGIN_MESSAGE_MAP(CMFCApplication1Dlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_ENABLE, &CMFCApplication1Dlg::OnClickedEnable)
+	ON_BN_CLICKED(IDC_SHOW, &CMFCApplication1Dlg::OnClickedShow)
+	ON_BN_CLICKED(IDC_TIT, &CMFCApplication1Dlg::OnClickedTit)
 END_MESSAGE_MAP()
 
 
-// C채팅방Dlg 메시지 처리기
+// CMFCApplication1Dlg 메시지 처리기
 
-BOOL C채팅방Dlg::OnInitDialog()
+BOOL CMFCApplication1Dlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 
@@ -109,7 +108,7 @@ BOOL C채팅방Dlg::OnInitDialog()
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
 
-void C채팅방Dlg::OnSysCommand(UINT nID, LPARAM lParam)
+void CMFCApplication1Dlg::OnSysCommand(UINT nID, LPARAM lParam)
 {
 	if ((nID & 0xFFF0) == IDM_ABOUTBOX)
 	{
@@ -126,7 +125,7 @@ void C채팅방Dlg::OnSysCommand(UINT nID, LPARAM lParam)
 //  아래 코드가 필요합니다.  문서/뷰 모델을 사용하는 MFC 애플리케이션의 경우에는
 //  프레임워크에서 이 작업을 자동으로 수행합니다.
 
-void C채팅방Dlg::OnPaint()
+void CMFCApplication1Dlg::OnPaint()
 {
 	if (IsIconic())
 	{
@@ -153,8 +152,58 @@ void C채팅방Dlg::OnPaint()
 
 // 사용자가 최소화된 창을 끄는 동안에 커서가 표시되도록 시스템에서
 //  이 함수를 호출합니다.
-HCURSOR C채팅방Dlg::OnQueryDragIcon()
+HCURSOR CMFCApplication1Dlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CMFCApplication1Dlg::OnClickedEnable()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	static bool bEnable = true;
+	bEnable = !bEnable;
+	GetDlgItem(IDC_TARGET)->EnableWindow(bEnable);
+	if (bEnable)
+	{
+		GetDlgItem(IDC_ENABLE)->SetWindowText(_T("비활성화 시킴!!"));
+	}
+	else
+	{
+		GetDlgItem(IDC_ENABLE)->SetWindowTextW(_T("활성화됨!!"));
+	}
+}
+
+
+void CMFCApplication1Dlg::OnClickedShow()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	static bool bShow = true;
+	bShow = !bShow;
+	GetDlgItem(IDC_TARGET)->ShowWindow(bShow);
+	if (bShow)
+	{
+		GetDlgItem(IDC_SHOW)->SetWindowText(_T("숨기기"));
+	}
+	else
+	{
+		GetDlgItem(IDC_SHOW)->SetWindowTextW(_T("보이기"));
+	}
+}
+
+
+void CMFCApplication1Dlg::OnClickedTit()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	static bool bTit = true;
+	bTit = !bTit;
+	if (bTit)
+	{
+		GetDlgItem(IDC_TARGET)->SetWindowTextW(_T("바뀌었다"));
+	}
+	else
+	{
+		GetDlgItem(IDC_TARGET)->SetWindowTextW(_T("후후후"));
+	}
+}

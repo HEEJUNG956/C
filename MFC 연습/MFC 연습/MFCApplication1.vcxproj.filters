@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="채팅방.h">
+    <ClInclude Include="MFCApplication1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="채팅방Dlg.h">
+    <ClInclude Include="MFCApplication1Dlg.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="framework.h">
@@ -33,42 +33,30 @@
     <ClInclude Include="pch.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="CSocServer.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="SocCom.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="채팅방.cpp">
+    <ClCompile Include="MFCApplication1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="채팅방Dlg.cpp">
+    <ClCompile Include="MFCApplication1Dlg.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CSocServer.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="SocCom.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="My.rc">
+    <ResourceCompile Include="MFCApplication1.rc">
       <Filter>리소스 파일</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\My.rc2">
+    <None Include="res\MFCApplication1.rc2">
       <Filter>리소스 파일</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\채팅방.ico">
+    <Image Include="res\MFCApplication1.ico">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>

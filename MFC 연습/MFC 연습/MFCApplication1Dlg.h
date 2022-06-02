@@ -1,20 +1,20 @@
 ﻿
-// 채팅방Dlg.h: 헤더 파일
+// MFCApplication1Dlg.h: 헤더 파일
 //
 
 #pragma once
 
 
-// C채팅방Dlg 대화 상자
-class C채팅방Dlg : public CDialogEx
+// CMFCApplication1Dlg 대화 상자
+class CMFCApplication1Dlg : public CDialogEx
 {
 // 생성입니다.
 public:
-	C채팅방Dlg(CWnd* pParent = nullptr);	// 표준 생성자입니다.
+	CMFCApplication1Dlg(CWnd* pParent = nullptr);	// 표준 생성자입니다.
 
 // 대화 상자 데이터입니다.
 #ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_MY_DIALOG };
+	enum { IDD = IDD_MFCAPPLICATION1_DIALOG };
 #endif
 
 	protected:
@@ -32,7 +32,7 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 public:
-	CString m_strSend;
-	CListBox m_list;
-	CString m_strStatus;
+	afx_msg void OnClickedEnable();
+	afx_msg void OnClickedShow();
+	afx_msg void OnClickedTit();
 };
