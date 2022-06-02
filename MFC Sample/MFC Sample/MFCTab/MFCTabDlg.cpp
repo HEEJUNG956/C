@@ -65,6 +65,7 @@ BEGIN_MESSAGE_MAP(CMFCTabDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_NOTIFY(TCN_SELCHANGE, IDC_TAB1, &CMFCTabDlg::OnTcnSelchangeTab1)
 END_MESSAGE_MAP()
 
 
@@ -153,3 +154,10 @@ HCURSOR CMFCTabDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CMFCTabDlg::OnTcnSelchangeTab1(NMHDR* pNMHDR, LRESULT* pResult)
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	*pResult = 0;
+}
