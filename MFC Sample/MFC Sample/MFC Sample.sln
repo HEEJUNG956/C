@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hello", "Hello\Hello.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "채팅프로그램", "채팅프로그램\채팅프로그램.vcxproj", "{5E8DA5B5-F91A-41B9-A2D8-0C149657F8DE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Spend", "Spend\Spend.vcxproj", "{57E07759-8220-4290-A838-830FF8A919E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{5E8DA5B5-F91A-41B9-A2D8-0C149657F8DE}.Release|x64.Build.0 = Release|x64
 		{5E8DA5B5-F91A-41B9-A2D8-0C149657F8DE}.Release|x86.ActiveCfg = Release|Win32
 		{5E8DA5B5-F91A-41B9-A2D8-0C149657F8DE}.Release|x86.Build.0 = Release|Win32
+		{57E07759-8220-4290-A838-830FF8A919E2}.Debug|x64.ActiveCfg = Debug|x64
+		{57E07759-8220-4290-A838-830FF8A919E2}.Debug|x64.Build.0 = Debug|x64
+		{57E07759-8220-4290-A838-830FF8A919E2}.Debug|x86.ActiveCfg = Debug|Win32
+		{57E07759-8220-4290-A838-830FF8A919E2}.Debug|x86.Build.0 = Debug|Win32
+		{57E07759-8220-4290-A838-830FF8A919E2}.Release|x64.ActiveCfg = Release|x64
+		{57E07759-8220-4290-A838-830FF8A919E2}.Release|x64.Build.0 = Release|x64
+		{57E07759-8220-4290-A838-830FF8A919E2}.Release|x86.ActiveCfg = Release|Win32
+		{57E07759-8220-4290-A838-830FF8A919E2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
