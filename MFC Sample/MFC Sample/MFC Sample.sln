@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFC TimerThread", "MFC Time
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFC TabControl", "MFC TabControl\MFC TabControl.vcxproj", "{FBA2E773-1AE3-4772-9248-2DA2255B0127}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCTab", "MFCTab\MFCTab.vcxproj", "{3F174250-8D70-4BA2-B82C-01609072F8FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{FBA2E773-1AE3-4772-9248-2DA2255B0127}.Release|x64.Build.0 = Release|x64
 		{FBA2E773-1AE3-4772-9248-2DA2255B0127}.Release|x86.ActiveCfg = Release|Win32
 		{FBA2E773-1AE3-4772-9248-2DA2255B0127}.Release|x86.Build.0 = Release|Win32
+		{3F174250-8D70-4BA2-B82C-01609072F8FD}.Debug|x64.ActiveCfg = Debug|x64
+		{3F174250-8D70-4BA2-B82C-01609072F8FD}.Debug|x64.Build.0 = Debug|x64
+		{3F174250-8D70-4BA2-B82C-01609072F8FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{3F174250-8D70-4BA2-B82C-01609072F8FD}.Debug|x86.Build.0 = Debug|Win32
+		{3F174250-8D70-4BA2-B82C-01609072F8FD}.Release|x64.ActiveCfg = Release|x64
+		{3F174250-8D70-4BA2-B82C-01609072F8FD}.Release|x64.Build.0 = Release|x64
+		{3F174250-8D70-4BA2-B82C-01609072F8FD}.Release|x86.ActiveCfg = Release|Win32
+		{3F174250-8D70-4BA2-B82C-01609072F8FD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
