@@ -187,7 +187,7 @@ HCURSOR CMFCTabControlDlg::OnQueryDragIcon()
 void CMFCTabControlDlg::OnSelchangeTabMain(NMHDR* pNMHDR, LRESULT* pResult)
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	/*if (IDC_TAB_MAIN == pNMHDR->idFrom) 
+	if (IDC_TAB_MAIN == pNMHDR->idFrom) 
 	{
 		int select = m_tab.GetCurSel();
 		switch (select) 
@@ -218,6 +218,5 @@ void CMFCTabControlDlg::OnSelchangeTabMain(NMHDR* pNMHDR, LRESULT* pResult)
 			break;
 		}
 	}
-	*/
 	pResult = 0;
 }
