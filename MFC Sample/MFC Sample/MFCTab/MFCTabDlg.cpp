@@ -59,6 +59,7 @@ CMFCTabDlg::CMFCTabDlg(CWnd* pParent /*=nullptr*/)
 void CMFCTabDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_TAB1, m_Tab);
 }
 
 BEGIN_MESSAGE_MAP(CMFCTabDlg, CDialogEx)
