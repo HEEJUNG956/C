@@ -12,7 +12,9 @@
 #define new DEBUG_NEW
 #endif
 
-
+#include "Tab1.h"
+#include "Tab2.h"
+#include "Tab3.h"
 // 응용 프로그램 정보에 사용되는 CAboutDlg 대화 상자입니다.
 
 class CAboutDlg : public CDialogEx
@@ -102,6 +104,29 @@ BOOL CMFCTabDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 작은 아이콘을 설정합니다.
 
 	// TODO: 여기에 추가 초기화 작업을 추가합니다.
+	m_Tab.InsertItem(0, _T("첫번째"));
+	m_Tab.InsertItem(1, _T("두번째"));
+	m_Tab.InsertItem(2, _T("세번째"));
+
+	m_Tab.SetCurSel(0);
+
+	CRect rect;
+	m_Tab.GetWindowRect(&rect);
+
+	pDlg1 = new CTab1;
+	pDlg1->Create(IDD_DIALOG1, &m_Tab);
+	pDlg1->MoveWindow(0, 25, rect.Width(), rect.Height());
+	pDlg1->ShowWindow(SW_SHOW);
+
+	pDlg2 = new CTab2;
+	pDlg2->Create(IDD_DIALOG2, &m_Tab);
+	pDlg2->MoveWindow(0, 25, rect.Width(), rect.Height());
+	pDlg2->ShowWindow(SW_SHOW);
+
+	pDlg3 = new CTab3;
+	pDlg3->Create(IDD_DIALOG3, &m_Tab);
+	pDlg3->MoveWindow(0, 25, rect.Width(), rect.Height());
+	pDlg3->ShowWindow(SW_SHOW);
 
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
@@ -160,5 +185,25 @@ HCURSOR CMFCTabDlg::OnQueryDragIcon()
 void CMFCTabDlg::OnTcnSelchangeTab1(NMHDR* pNMHDR, LRESULT* pResult)
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	int sel = m_Tab.GetCurSel();
+
+	switch (sel)
+	{
+	case 0:
+		pDlg1->ShowWindow(SW_SHOW);
+		pDlg2->ShowWindow(SW_HIDE);
+		pDlg3->ShowWindow(SW_HIDE);
+		break;
+	case 1:
+		pDlg1->ShowWindow(SW_HIDE);
+		pDlg2->ShowWindow(SW_SHOW);
+		pDlg3->ShowWindow(SW_HIDE);
+		break;
+	case 2:
+		pDlg1->ShowWindow(SW_HIDE);
+		pDlg2->ShowWindow(SW_HIDE);
+		pDlg3->ShowWindow(SW_SHOW);
+		break;
+	}
 	*pResult = 0;
 }

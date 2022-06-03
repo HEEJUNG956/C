@@ -3,7 +3,11 @@
 //
 
 #pragma once
+#include "afxcmn.h"
 
+class CTab1;
+class CTab2;
+class CTab3;
 
 // CMFCTabDlg 대화 상자
 class CMFCTabDlg : public CDialogEx
@@ -11,7 +15,9 @@ class CMFCTabDlg : public CDialogEx
 // 생성입니다.
 public:
 	CMFCTabDlg(CWnd* pParent = nullptr);	// 표준 생성자입니다.
-
+	CTab1 *pDlg1;
+	CTab2 *pDlg2;
+	CTab3 *pDlg3;
 // 대화 상자 데이터입니다.
 #ifdef AFX_DESIGN_TIME
 	enum { IDD = IDD_MFCTAB_DIALOG };
