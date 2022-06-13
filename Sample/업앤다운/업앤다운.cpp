@@ -55,6 +55,7 @@ int main()
         {
             printf("정답입니다!\n");
             printf("시도 횟수 : %d\n", count);
+            system("pause");
             break;
         }
         system("cls");
