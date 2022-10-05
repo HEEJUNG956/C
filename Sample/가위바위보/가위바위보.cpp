@@ -3,6 +3,7 @@
 #include <string>
 
 using namespace std;
+// 주석 추가
 int main()
 {
     srand((unsigned int)time(0));
